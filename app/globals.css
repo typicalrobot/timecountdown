@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Minecraft";
+  src: url("/fonts/minecraft.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.minecraft-font {
+  font-family: "Minecraft", monospace;
+  letter-spacing: 1px;
+}
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 142 70% 70%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 142 30% 96%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 142 30% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 142 30% 96%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 142 30% 90%;
+  --input: 142 30% 90%;
+  --ring: 142 70% 70%;
+  --radius: 0.5rem;
+
+  /* Maroon and Gold colors */
+  --maroon: #8c1d40;
+  --gold: #ffc627;
+  --maroon-light: #b33b5e;
+  --gold-light: #ffd45f;
+
+  /* Colorblind mode colors */
+  --cb-primary: #0072b2; /* Blue */
+  --cb-secondary: #e69f00; /* Orange */
+  --cb-primary-light: #56b4e9; /* Light blue */
+  --cb-secondary-light: #f0e442; /* Yellow */
+}
+
+/* Standard mode colors */
+.bg-maroon {
+  background-color: var(--maroon);
+}
+
+.bg-gold {
+  background-color: var(--gold);
+}
+
+.bg-maroon-light {
+  background-color: var(--maroon-light);
+}
+
+.bg-gold-light {
+  background-color: var(--gold-light);
+}
+
+.text-maroon {
+  color: var(--maroon);
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.border-maroon {
+  border-color: var(--maroon);
+}
+
+.border-gold {
+  border-color: var(--gold);
+}
+
+.hover\:bg-maroon:hover {
+  background-color: var(--maroon);
+}
+
+.hover\:bg-gold:hover {
+  background-color: var(--gold);
+}
+
+.hover\:text-maroon:hover {
+  color: var(--maroon);
+}
+
+.hover\:text-gold:hover {
+  color: var(--gold);
+}
+
+.focus-visible\:ring-gold:focus-visible {
+  --tw-ring-color: var(--gold);
+}
+
+/* Colorblind mode colors */
+.colorblind .bg-maroon {
+  background-color: var(--cb-primary);
+}
+
+.colorblind .bg-gold {
+  background-color: var(--cb-secondary);
+}
+
+.colorblind .bg-maroon-light {
+  background-color: var(--cb-primary-light);
+}
+
+.colorblind .bg-gold-light {
+  background-color: var(--cb-secondary-light);
+}
+
+.colorblind .text-maroon {
+  color: var(--cb-primary);
+}
+
+.colorblind .text-gold {
+  color: var(--cb-secondary);
+}
+
+.colorblind .border-maroon {
+  border-color: var(--cb-primary);
+}
+
+.colorblind .border-gold {
+  border-color: var(--cb-secondary);
+}
+
+.colorblind .hover\:bg-maroon:hover {
+  background-color: var(--cb-primary);
+}
+
+.colorblind .hover\:bg-gold:hover {
+  background-color: var(--cb-secondary);
+}
+
+.colorblind .hover\:text-maroon:hover {
+  color: var(--cb-primary);
+}
+
+.colorblind .hover\:text-gold:hover {
+  color: var(--cb-secondary);
+}
+
+.colorblind .focus-visible\:ring-gold:focus-visible {
+  --tw-ring-color: var(--cb-secondary);
+}
+
+/* Colorblind toggle button */
+.colorblind-toggle-container {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 50;
+}
